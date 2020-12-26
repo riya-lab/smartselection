@@ -1,0 +1,108 @@
+/*Additional Resets*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Layout*/
+body {
+  width: 940px;
+  font-size: 100%;
+  font-family: sans-serif;
+  color: #999;
+  background-color: #e8e8e8;
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+outline: 0;
+text-decoration: none;
+}
+  a:hover {
+    color: #fff;
+  }
+
+header {
+  background: #454545;
+  height: 100px;
+}
+  header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #eee;
+    padding-top: 1em;
+    margin-bottom: 5px;
+  }
+  header p {
+    font-size: 17px;
+    color: #707070;
+  }
+
+nav {
+  height: 40px;
+  background-color: #bbb;
+}
+
+  ul {
+    padding-top: 10px;
+  }
+
+  li {
+      display: inline-block;
+  }
+
+
+nav a {
+  color: #333;
+  display: block;
+  width: 80px;
+}
+
+.active a {
+  color: #fff;
+}
+
+.content {
+  background-color: #ddd; /*this is bkgd color of aside*/
+}
+
+  /*clears floats so footer displays correctly*/
+  .content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  section, aside {
+    float: left;
+    height: 40px;
+    padding: 100px;
+  }
+  section {
+    width: 65%;
+    background-color: #eee;
+
+  }
+  aside {
+    width: 35%;
+  }
+
+footer {
+  font-size: 12px;
+  background: #454545;
+  padding: 20px;
+}
+
+  footer a {
+   color: #999;
+  }
